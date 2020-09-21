@@ -6,9 +6,9 @@ This is a small Okta SCIM app that watches for password changes and then re-hash
 The `/authorize/<okta_user>` route is intended to work with the FreeRADIUS rest module.
 
 ```
-	authorize {
-		uri = "http://127.0.0.1:5000/authorize/%{User-Name}"
-		method = 'get'
-		tls = ${..tls}
-	}
+authorize {
+    uri = "http://127.0.0.1:5000/authorize/%{User-Name}"
+    method = 'get'
+    tls = ${..tls}
+}
 ```
